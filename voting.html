@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Voting</title>
+</head>
+<body>
+    <div>
+      <form>
+        <label for="age">We need to verify that you are over 18 years old for you to be able to vote. What is your date of birth? (yymmdd)</label>
+        <input id="age" type="number">
+        <button type="submit">Submit!</button>
+      </form>
+  
+      <div id="voteNot" class="hidden">
+        <h1>Sorry you are not old enough to vote yet.</h1>
+
+        <h2>Please refer to this link for more information on voting.</h2>
+        <ul>
+          <li>What is <a href="https://en.wikipedia.org/wiki/Voting">voting?</a></li>
+          <li>American voting <a href="https://en.wikipedia.org/wiki/Elections_in_the_United_States">system.</a></li>
+          <li>Join us soon!</li>
+        </ul>
+      </div>
+  
+      <div id="voteAble" class="hidden">
+        <h1 id="able"></h1>
+        <h1>Here are some useful information!</h1>
+        <p><a href="https://www.usa.gov/register-to-vote">Resgister to vote here</a></p>
+        <p><a href="https://www.piercecountywa.gov/334/Ballot-Drop-Boxes">Your nearing ballot drop box</a></p>
+        <p><a href="https://ballotpedia.org/Elections_calendar">Election calender</a></p>
+      </div>
+    </div>
+  </body>
+  </html>
